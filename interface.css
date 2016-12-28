@@ -1,0 +1,30 @@
+/**
+ * The css that controls the interface
+ * (Actually a pretty bootleg bootstrap modal)
+ */
+ .Tweet-Downloader{
+    position : fixed;
+    top : 0px;
+    left : 0px;
+    width : 100%;
+    height : 100%;
+    z-index : 9999;
+    background-color : rgba( 0, 0, 0, .2 );
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+ }
+
+ .Tweet-Downloader-Inner{
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    padding : 10px;
+    background-color : #f1f1f1;
+    border-radius : 5px;
+ }
+
+ .Tweet-Downloader-Close{
+     display : none;
+     color : inherit;
+ }

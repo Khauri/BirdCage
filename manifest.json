@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "BirdCage",
+    "description": "Download any Tweet as an image",
+    "version": "1.0.0",
+    
+    "page_action" :
+    {
+        "default_icon" : {
+            "128" : "128.png"
+        },
+        "default_title" : "TweetShare"
+    },
+
+    "content_scripts": [
+        {
+        "matches": ["*://*.twitter.com/*"],
+        "css": [ "interface.css" ],
+        "js": ["html2canvas.js", "buttons.js", "interface.js"]
+        }
+    ],
+
+    "permissions": []
+}
